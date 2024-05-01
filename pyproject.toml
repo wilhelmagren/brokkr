@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pybrokkr"
+version = "0.1.0"
+description = "Software installation tool."
+authors = [
+    "Wilhelm Ågren <wilhelmagren98@gmail.com>",
+]
+license = "LICENSE"
+readme = "README.md"
+
+packages = [ { include = "src/brokkr" } ]
+homepage = "https://github.com/wilhelmagren/brokkr"
+repository = "https://github.com/wilhelmagren/brokkr"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/wilhelmagren/brokkr"
+"Bug tracker" = "https://github.com/wilhelmagren/brokkr/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+
+
+[build-system]
+requires = [ "poetry-core" ]
+build-backend = "poetry.core.masonry.api"
